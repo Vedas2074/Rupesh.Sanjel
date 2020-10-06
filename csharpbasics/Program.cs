@@ -1,16 +1,27 @@
 ﻿using LearningClasses;
 using System;
-using System.Linq;
-namespace csharpbasics
+
+class Program
 {
-    class Program
-    {
-        static void Main2345()
-        {
-            var Person1 = new Person("Rupesh", "ktm",21);
-            var Person2= new Person1("Samip", "ltp", 22);
-            var Person3= new Person("Sobit","Lamjung",23);
-        }
+    static void Main2342()
+    {       
+        var person1 = new Person("Bishnu", "Ktm");
+        var person2 = new Person("Ramesh", "Bhaktapur", 23);
+        var person3 = new Person("Rame", "Bhaktapur", 20);
+
+        var person4 = new Person();
+
+        // Accessing static members
+        var x = Person.ScientificName;
+        Person.Do();
+        var y = Math.Sqrt(342);
+
+        var s1 = Calculator.Sum<int>(23, 34);
+        var s2 = Calculator.Sum<decimal>(233443.23m, 34344656.1m);
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.Length = 23.6;
+        rectangle.Breadth = 6.32;
+        var result = rectangle.GetArea();
     }
 }
-

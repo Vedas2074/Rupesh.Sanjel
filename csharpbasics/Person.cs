@@ -1,5 +1,7 @@
-using System;
-class Person1
+﻿using System;
+namespace csharpbasics 
+{
+class Person
 {
     string name;
     int age;
@@ -34,4 +36,5 @@ class Person1
     {
         return base.ToString();
     }
+}
 }
