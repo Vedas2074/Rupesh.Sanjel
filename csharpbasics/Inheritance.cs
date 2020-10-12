@@ -10,8 +10,12 @@ public abstract class Shape
         Console.WriteLine("Printing details for shape...");
     }
 }
+public interface IDiagonalComputable
+{
+    public double GetDiagonalLength();
+}
 
-public class Rectangle : Shape
+public class Rectangle : Shape, GetDiagonalComputable
 {
      public Rectangle(double l, double b)
        {
@@ -29,6 +33,10 @@ public class Rectangle : Shape
         Console.WriteLine($"Length: {Length}, Breadth: {Breadth}");
         Console.WriteLine($" Area: {this.GetArea()}, Perimeter: {this.GetPerimeter()}");
     }
+}
+
+internal interface GetDiagonalComputable
+{
 }
 
 public class Square : Rectangle
