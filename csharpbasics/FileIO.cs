@@ -2,7 +2,7 @@ using System;
 using System.IO;
 namespace FileDirectoryHandling
 {
-    public class FileDirectoryHandling
+    public class FileIO
     {
         public void LearnFileReading()
         {
