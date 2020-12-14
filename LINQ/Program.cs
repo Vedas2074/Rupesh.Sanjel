@@ -48,12 +48,12 @@ namespace LINQ
 
             List<Person> people = new List<Person>()
             {
-                new Person() {Id =1, FirstName="Ram",LastName="A",Address, age},
-                new Person() {Id =2, FirstName="Shyam",LastName="B",Address, age},
-                new Person() {Id =3, FirstName="Hari",LastName="C",Address, age},
-                new Person() {Id =4, FirstName="Gita",LastName="D",Address, age},
-                new Person() {Id =5, FirstName="Sita",LastName="E",Address, age},
-                new Person() {Id =6, FirstName="Rita",LastName="F",Address, age},
+                new Person() {Id =1, Firstname="Ram",Lastname="A",Address="ktm", Age=12},
+                new Person() {Id =2, Firstname="Shyam",Lastname="B",Address="bktpur", Age=20},
+                new Person() {Id =3, Firstname="Hari",Lastname="C",Address="Lalitpur", Age=23},
+                new Person() {Id =4, Firstname="Gita",Lastname="D",Address="ktm", Age=34},
+                new Person() {Id =5, Firstname="Sita",Lastname="E",Address="bktpur", Age=32},
+                new Person() {Id =6, Firstname="Rita",Lastname="F",Address="Lalitpur", Age=13},
             };
                 // find all people who live in kathmandu?
                 var result10 = from person in  people
@@ -61,7 +61,7 @@ namespace LINQ
                               select person;
 
                 //find all people who are minors 
-                var result10 = from person in  people
+                var result11 = from person in  people
                               where person.Age < 18 &&person.Address =="Bhaktapur"
                               select person;              
                                                             
